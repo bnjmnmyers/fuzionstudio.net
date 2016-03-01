@@ -1,0 +1,25 @@
+.copy ul li{
+	font: 12px/24px Arial, Helvetica, sans-serif;
+	margin-left: 10px;	
+}
+
+.copy p{
+	font: 14px/24px Arial, Helvetica, sans-serif;
+}
+	
+	.groupList{
+		clear: both;	
+	}
+
+		.groupList li span{
+			font-weight: bold;
+		}
+		
+.classDivizionTitle{
+	clear: both;
+	font-weight: bold !important;	
+}
+
+.classList{
+	clear: both;	
+}

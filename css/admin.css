@@ -1,0 +1,9 @@
+/* CSS Document */
+tr{
+	display:block;
+	margin-bottom:6px;
+}
+
+	.label{
+		width:90px;	
+	}

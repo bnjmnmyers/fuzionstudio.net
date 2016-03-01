@@ -1,0 +1,37 @@
+/* CSS Document */
+
+#vt360{
+	margin:0 auto;
+	position:relative;
+	top:13px;
+	width:929px;	
+}
+
+#featuredLinks{
+	margin:0 auto 10px auto;
+	width:952px;	
+}
+
+	.pod{
+		float:left;
+		height:300px;
+		margin:30px 11px 0 11px;
+		width:295px;
+	}
+	
+		.pod a{
+			display:block;
+			margin-bottom:14px;
+		}
+		
+		.pod p{
+			font:13px/20px Arial, Helvetica, sans-serif;
+		}
+		
+			.podTitle{
+				color:#701613;
+				display:block;
+				font-size:16px;
+				font-weight:700;
+				margin-bottom:4px;
+			}

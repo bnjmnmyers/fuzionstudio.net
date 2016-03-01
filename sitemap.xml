@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://fuzionstudio.net/index.php</loc>
+  <changefreq>yearly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://fuzionstudio.net/about.php</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://fuzionstudio.net/classes.php</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://fuzionstudio.net/schedule.php</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://fuzionstudio.net/downloads.php</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://fuzionstudio.net/downloads/FuzionPacket.pdf</loc>
+  <lastmod>2012-02-10T03:02:35+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1680x1050/FSABG1.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1680x1050/FSABG2.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1680x1050/FSABG3.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1440x900/FSABG1.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1440x900/FSABG2.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1440x900/FSABG3.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1280x1024/FSABG1.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1280x1024/FSABG2.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1280x1024/FSABG3.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1280x800/FSABG1.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1280x800/FSABG2.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.fuzionstudio.net/downloads/wallpapers/1280x800/FSABG3.jpg</loc>
+  <changefreq>yearly</changefreq>
+  <priority>0.64</priority>
+</url>
+</urlset>

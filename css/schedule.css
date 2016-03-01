@@ -1,0 +1,58 @@
+/* CSS Document */
+#scheduleCopy{
+	float: left;
+	margin: 20px 0 0 60px; 
+}
+
+	.headingOne{
+		float: left;
+		margin-left: 10px;	
+	}
+	
+	.dayHeading{
+		display: block;
+		clear: both;	
+		padding-left: 9px;
+	}
+	
+	.decorativeBorder{
+		clear: both;
+		display: block;
+		margin-bottom: 20px;
+	}
+	
+	table{
+		margin-bottom: 50px;	
+	}
+	
+		tr{    
+			border-bottom: 1px solid black;
+		}
+	
+		.lastRow{
+			border-bottom: none !important;	
+		}
+
+	
+			td{
+				height: 50px;
+				text-align: center;
+			}
+			
+			.rowHeader{
+				font: bold 16px Arial, Helvetica, sans-serif;
+			}
+			
+			.class, .time{
+				border: 1px solid black;
+				font: 14px Arial, Helvetica, sans-serif;	
+			}
+			
+			.time{
+				font-weight: bold;
+				width: 82px;	
+			}
+			
+			.class{
+				width: 200px;
+			}

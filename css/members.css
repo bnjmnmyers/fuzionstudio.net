@@ -1,0 +1,24 @@
+/* CSS Document */
+#subNav{
+	margin-top:10px;
+}
+
+	#subNav li{
+		float:left;	
+		margin-right:20px;
+	}
+
+.columnLabel{
+	background-color: #701413;
+    color: white;
+    font-weight: bold;
+    padding: 14px 4px;
+}
+
+.columnLabel, .memberRow td{
+	border:1px groove black;
+}
+
+.memberRow td{
+	padding:4px;	
+}

@@ -1,0 +1,18 @@
+/* CSS Document */
+.adminCategoryCont{
+	float:left;
+	margin:10px 20px 0 0;
+}
+	
+	.managementIcon{
+		float:left;	
+	}
+	
+	.adminCategory{
+		color:#701413;
+		float:left;
+		font:200 20px 'Source Sans Pro',sans-serif;
+		margin:13px 0 0 10px;
+		text-decoration:underline;
+	}
+

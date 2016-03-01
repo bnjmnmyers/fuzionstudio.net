@@ -1,0 +1,41 @@
+/* CSS Document */
+form{
+	margin-bottom: 20px;	
+}
+
+	form > div{
+		margin:0 20px 20px 0;	
+	}
+	
+		label{
+			display:block;
+			font-family:Georgia, "Times New Roman", Times, serif;	
+			margin-bottom: 6px;
+		}
+
+#contactCont {
+	margin: 20px 0 0 25px;
+	width: 914px;
+}
+
+#contactInfo{
+	float:left;
+	margin:0 0 40px 40px;
+	width:400px
+}
+		
+	#contactInfo p{
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:16px;
+		width:300px;
+	}
+	
+	.heading{
+		font: bold 20px Georgia, "Times New Roman", Times, serif !important;
+		margin-bottom:4px;	
+	}
+	
+	#map{
+		margin:10px 0;
+	}
+
