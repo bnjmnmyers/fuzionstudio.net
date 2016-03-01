@@ -183,6 +183,12 @@
                                     <input id="phoneInput" type="text" name="phone" class="form-control" aria-describedby="phone-addon" placeholder="ex. 555-555-5555" />
                                 </div>
                             </div>
+                            <div id="classes">
+                            	<div class="field-divider"></div>
+                                <h4>Classes</h4>
+                                <div id="classInformation">
+                                </div>
+                            </div>
                             <div class="field-divider"></div>
                             <div id="memberTypeFields">
                             	<label>Member Type: (check all that apply)</label><br/>
@@ -190,19 +196,25 @@
                                 	<span class="input-group-addon member-type-checkbox">
                                 		<input type="checkbox" name="student" value="student" aria-label="student-addon" />
                                     </span>
-                                    <input class="form-control member-type-label" contenteditable="false" disabled="disabled" aria-label="student-addon" value="Student" />
+                                    <label class="form-control member-type-label" aria-label="student-addon">Student</label>
                                 </div>
                                 <div class="input-group">
                                 	<span class="input-group-addon member-type-checkbox">
                                 		<input type="checkbox" name="guardian" value="guardian" aria-label="guardian-addon" />
                                     </span>
-                                    <input class="form-control member-type-label" contenteditable="false" disabled="disabled" aria-label="guardian-addon" value="Guardian" />
+                                    <label class="form-control member-type-label" aria-label="guardian-addon">Guardian</label>
                                 </div>
                                 <div class="input-group">
                                 	<span class="input-group-addon member-type-checkbox">
                                 		<input type="checkbox" name="instructor" value="instructor" aria-label="instructor-addon" />
                                     </span>
-                                    <input class="form-control member-type-label" contenteditable="false" disabled="disabled" aria-label="instructor-addon" value="Instructor" />
+                                    <label class="form-control member-type-label" aria-label="instructor-addon">Instructor</label>
+                                </div>
+                                <div class="input-group">
+                                	<span class="input-group-addon member-type-checkbox">
+                                		<input type="checkbox" name="goober" value="goober" aria-label="goober-addon" />
+                                    </span>
+                                    <label class="form-control member-type-label" aria-label="goober-addon">Goober</label>
                                 </div>
                             </div>
                             <label>Is Member Active:</label>
@@ -223,6 +235,9 @@
 		<?php include 'includes/_footer.php' ?>
 	</div>
     <script type="text/javascript">
+		$(document).ready(function(){
+			$('#classes').toggle();
+		});
 		function showAdultStudentForm(){
 			$('#adultForm').show();
 			$('#studentForm').hide();
@@ -241,7 +256,6 @@
 		function toggleGuardianFields(){
 			$('#guardian-fields').toggle();	
 		}
-		
 
 		function getAge(dateString) {
 			console.log(dateString);
@@ -253,19 +267,26 @@
 				age--;
 			}
 			
-			getClassesByAge(age);
+			$('#classInformation').empty();
+			getClasses(age);
 		}
 		
-		function getClassesByAge(age){
-			console.log("got here")
+		function getClasses(age){
 			$.ajax({
-				type: "POST",
-				url: '/includes/_functions.php',
-				data: age,
+                url: 'includes/AJAX.php?method=getClassesByAge&age='+age,
 				success: function(data)
 				{
-					console.log("made it");
-					console.log(data);
+					var obj = jQuery.parseJSON(data);
+					$.each(obj.feed.classes, function(key,value) {
+						$('#classInformation').append('<div class="input-group"><span class="input-group-addon class-checkbox"><input type="checkbox" name="'+value.className+'" value="'+value.className+'" aria-label="class-addon" /></span><label class="form-control class-label" aria-label="class-addon">'+value.className+'</div>');
+					  	if ($('#classes').css('display') == 'none') {
+					  		$('#classes').toggle();
+					  	}
+					}); 
+				},
+				error: function()
+				{
+					console.log("There was an error retrieving class data.");	
 				}
 			});
 		}

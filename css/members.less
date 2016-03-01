@@ -1,0 +1,82 @@
+@import "global.less";
+/* CSS Document */
+#subNav{
+	margin-top:10px;
+}
+
+	#subNav li{
+		float:left;	
+		margin-right:20px;
+	}
+
+.columnLabel{
+	background-color:#701413;
+    color:white;
+    font-weight:bold;
+    padding:14px 4px;
+}
+
+.columnLabel, .memberRow td{
+	border:1px groove black;
+}
+
+.memberRow td{
+	padding:4px;	
+}
+
+/************************** MEMBER REGISTRATION FORM **************************/
+
+#memberForm{
+	width:596px;	
+}
+
+	#addressFields .input-group{
+		float:left;		
+	}
+	
+	#cityGroup,
+	#stateGroup,
+	#zipGroup{
+		margin-top:8px;
+	}
+	
+	#cityGroup{
+		width:222px;	
+	}
+	
+	#stateGroup{
+		width:110px;
+	}
+	
+	#zipGroup{
+		width:200px;
+	}
+
+	.input-group{
+		float:left;
+		margin-right:8px;
+	}
+	
+		.member-input-label{
+			width:100px !important;	
+		}
+		
+		.member-input{
+			width:200px !important;
+			z-index:@bottom-z-index;
+		}
+		
+		.member-type-checkbox{
+			background-color:white;	
+		}
+		
+		.member-type-label{
+			background-color:@fuzionPrimaryColor;
+			color:white;
+			width:100px !important;
+			z-index:@bottom-z-index;
+		}
+	
+	.field-divider{
+		.Divider;	
+	}

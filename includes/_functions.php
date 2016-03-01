@@ -66,6 +66,8 @@
 			$result = mysql_query("CALL getAllInstructors()") or die("Query fail: " . mysql_error());
 			
 			return $result;
+			
+			mysql_close();
 		}
 	}
 	
@@ -78,6 +80,8 @@
 			$result = mysql_query("CALL usp_GetStudents()") or die("Query fail: " . mysql_error());
 			
 			return $result;
+			
+			mysql_close();
 		}
 	}
 	
@@ -90,29 +94,8 @@
 			$result = mysql_query("CALL getAllClasses('$divizionID', '$subDivizionID')") or die("Query fail: " . mysql_error());
 			
 			return $result;
-		}
-	}
-	
-	function getClassesByAge($age)
-	{
-		mysql_connect(FSSQL2_CONNECTION, FSSQL2_USER, FSSQL2_PASS);
-		if(mysql_ping())
-		{
-			mysql_select_db(FSSQL2_HOST);
-			$result = mysql_query("CALL getClassesByAge('$age')") or die("Query fail: ". mysql_error());	
 			
-			$rows = array();
-			
-			while($r = mysql_fetch_assoc($result))
-			{
-				$rows['feed']['classes'][] = $r;	
-			}
-			
-			header('Content-Type: application/json');
-			
-			$classes = json_encode($rows);
-			
-			return $classes;
+			mysql_close();
 		}
 	}
 	
@@ -125,6 +108,8 @@
 			$result = mysql_query("CALL getPayments('$minDate', '$maxDate')") or die("Query fail: " . mysql_error());
 			
 			return $result;
+			
+			mysql_close();
 		}
 	}
 ?>

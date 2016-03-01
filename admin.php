@@ -39,29 +39,17 @@
 					}
 				?>
 				<form id="loginForm" action="admin.php" method="post">
-					<table cellpadding="0">
-						<tr>
-							<td>
-								<label class="label label-default" for="username">Username:</label>
-							</td>
-							<td>
-								<input type="text" name="username" /><br/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<label class="label label-default" for="password">Password:</label>
-							</td>
-							<td>
-								<input type="password" name="password" /><br/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<input class="btn btn-sm btn-default" type="submit" name="submit" value="Login" />
-							</td>
-						</tr>
-					</table>
+                	<div class="login-well well">
+                        <div class="input-group">
+                            <span id="username-addon" class="input-group-addon login-label">Username</span>
+                            <input type="text" name="username" class="form-control" aria-describedby="username-addon" />
+                        </div>
+                        <div class="input-group">
+                            <span id="password-addon" class="input-group-addon login-label">Password</span>
+                            <input type="password" name="password" class="form-control" aria-describedby="password-addon" />
+                        </div>
+                        <input class="btn btn-sm btn-default login-btn" type="submit" name="submit" value="Login" />
+                    </div>
 				</form>
 			</div>
 		</div>

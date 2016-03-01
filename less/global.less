@@ -1,0 +1,342 @@
+/* CSS Document */
+@import url(reset.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900);
+
+/***********************************
+             CONSTANTS
+***********************************/
+@bottom-z-index:0 !important;
+@fuzionPrimaryColor:#701613 !important;
+@top-z-index:9999 !important;
+
+/***********************************
+             MIXINS
+***********************************/
+
+.CenterUp{
+	margin:0 auto;	
+}
+
+.Divider{
+	background-color:rgb(223, 223, 223);
+	float:left;
+	height:1px;
+	margin:20px 0px;
+	width:548px;
+}
+
+.SetFont(@thickness,@fontSize){
+	font:@thickness @fontSize 'Source Sans Pro', sans-serif;
+}
+
+/***********************************
+             STYLES
+***********************************/
+
+a{
+	text-decoration:none;
+}
+
+body{
+	background:url(../images/background.jpg) no-repeat top;	
+}
+
+h1{
+	.SetFont(700,40px);
+	margin-left:22px;
+	width:546px;
+}
+
+h2{
+	background:url(../images/fuzionLine.jpg) no-repeat bottom;
+	.SetFont(700,30px);
+	padding-bottom:4px;
+	width:306px;
+}
+
+h3{
+	color:@fuzionPrimaryColor;
+	.SetFont(700,20px);
+}
+
+#wrapper{
+	.CenterUp;
+	width:978px;	
+}
+	
+/******************** HEADER ********************/	
+
+#header{
+	.CenterUp;
+	width:978px;	
+}
+
+	#logo{
+		float:left;
+		left:6px;
+		position:relative;
+		top:16px;
+	}
+	
+	#phone{
+		color:@fuzionPrimaryColor;
+		float:right;
+		.SetFont(600,14px);
+		position:relative;
+		right:8px;
+		top:30px;
+	}
+	
+	#socialIcons{
+		clear:right;
+		float:right;
+		position:relative;
+		right:9px;
+		top:28px;	
+	}
+	
+		#socialIcons a{
+			margin-left:24px;	
+		}
+		
+	#salutation{
+		float:left;
+		margin-left:140px;
+	}
+	
+		#salutation h3{
+			color:#000 !important;	
+		}
+		
+			#salutation h3 a{
+				color:@fuzionPrimaryColor;
+				text-decoration:underline;
+			}	
+	
+		#logoutBtn{
+			color:@fuzionPrimaryColor;
+			display:block;
+			float:left;
+			font:13px Arial, Helvetica, sans-serif;
+			margin:25px 0 0 20px;
+			width:51px;	
+		}
+		
+/******************** HEADER - END ********************/	
+		
+/******************** NAV ********************/	
+
+#nav{
+	background:url(../images/menuBG.png) no-repeat;
+	float:left;
+	height:63px;
+	left:3px;
+	margin-bottom:48px;
+	position:relative;
+	top:25px;
+	width:970px;
+}
+
+	#nav ul{
+		margin-left:18px;
+	}
+
+		#nav li{
+			display:block;
+			float:left;
+			height:53px;
+			margin:0 2px;
+			position:relative;
+			top:3px
+		}
+		
+		#nav li.current{
+			background:url(../images/menuItemBG.jpg) repeat-x;
+		}
+			
+		#nav li:hover{
+			background:url(../images/menuItemBG.jpg) repeat-x;
+		}
+		
+			#nav li a{
+				color:#555;
+				.SetFont(700, 15px);
+				margin:0 10px;
+				position:relative;
+				top:17px;
+			}
+				
+/******************** NAV - END ********************/	
+
+.bodyCap{
+	margin:0 auto;
+	width:978px;
+}
+
+/******************** CONTENT ********************/
+
+#content{
+	background:url(../images/bodyTile.png) repeat-y;
+	float:left;
+	margin:0 auto;
+	width:978px;
+}
+
+	#pageTitle{
+		display:block;
+		margin:3px 0 0 20px;
+		padding-left:9px;
+	}
+	
+	#pageTitle_admin{
+		float:left;
+	}
+
+	#subNav{
+		clear:left;
+		float:left;
+		margin:21px 26px 0 25px;
+	}
+	
+		#subNav li{
+			color:@fuzionPrimaryColor;
+			margin-bottom:4px;
+		}
+		
+			#subNav li span{
+				color:#000;
+				font:bold 13px Arial, Helvetica, sans-serif;
+				margin-right:4px;
+			}
+		
+		.pipe{
+			margin:2px 5px 0 5px;	
+		}
+		
+			.subNavLink{
+				color:@fuzionPrimaryColor;
+				cursor:pointer;
+				.SetFont(600,14px);
+				text-decoration:underline;
+			}
+			
+			.subNavLink:hover{
+				text-decoration:none;	
+			}
+			
+	#banner{
+		clear:both;
+		height:172px;
+		margin:6px auto 10px;
+		position:relative;
+		width:929px;	
+	}
+	
+	.infoCont{
+		float:left;
+		width:760px;
+	}
+	
+	
+	.infoCont_noSideNav{
+		clear:both;
+		float:left;
+		margin:30px 26px 0 25px;	
+	}
+	
+		.sectionTitle{
+			display:block;
+			margin-left:10px;
+			padding-left:9px;
+		}
+		
+		.copy{
+			float:left;
+			margin:16px 0 50px 22px;	
+		}
+		
+			.copy p{
+				float:left;
+				font:14px/24px Arial, Helvetica, sans-serif;	
+			}
+
+
+/******************** CONTENT - END ********************/
+		
+/******************** FOOTER ********************/	
+
+#footer{
+	background:url(../images/footerTile.png) repeat-y;
+	float:left;
+	margin:0 auto;
+	width:978px;	
+}
+
+	#footerNav{
+		margin:0 auto 38px auto;
+		position:relative;
+		width:394px;
+		/* USE WHEN ALL MENU ITEMS ARE BACK */
+		/*width:625px;*/	
+	}
+	
+	#footerNav ul li{
+		float:left;
+		margin:0 11px; 	
+	}
+	
+		#footerNav ul li a{
+			color:#FFF;
+			.SetFont(600,11px);
+		}
+		
+	#footerInfo{
+		clear:both;
+		color:#FFF;
+		font:11px 'Source Sans Pro', sans-serif;
+		position:relative;
+		text-align:center;
+		top:22spx;
+		width:978px;
+	}
+	
+	
+		#adsCont{
+			margin:0 auto;
+			width:396px;
+		}
+		.ads{
+			float:left;
+			margin:10px 20px;
+			width:158px;	
+		}
+			
+			#idLogo{
+				display:block;
+				margin-bottom:8px;	
+			}
+			
+			#k360Logo{
+				display:block;
+				margin-bottom:8px;	
+			}
+
+/******************** FOOTER - END ********************/
+
+/******************** ELEMENTS - BEGIN ********************/
+
+.ui-datepicker{
+	z-index:@top-z-index;
+}
+
+/******************** ELEMENTS - END ********************/
+	
+
+
+/******************** Utility Classes ********************/
+.border{border:1px solid red;}
+.error{display:block;}
+.floatL{float:left;}
+.hidden{display:none;}
+.visible{display:block};

@@ -38,7 +38,7 @@
 			<div id="infoPacketCont" class="infoCont">
 				<h2 class="sectionTitle">Fuzion Info Packet</h2>
 				<div class="copy">
-					<a id="infoPacket" href="downloads/FuzionPacket.pdf?ts=08012015-1123">
+					<a id="infoPacket" href="downloads/FuzionPacket.pdf?ts=08142014-1604">
 						<img src="images/downloads/infoPacket.jpg" height="185" width="224" alt="Student Information Packet" />
 						<h3>Download Student Info Packet</h3>
 					</a>
