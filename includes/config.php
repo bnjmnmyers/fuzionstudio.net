@@ -14,6 +14,6 @@ define("FSSQL2_PASS", "Fuz10nDB");
 
 define("SALT", "Fuz10nR0ck$");
 
-define("ADMIN_EMAIL", "bmyers@fuzionstudio.net");
+define("ADMIN_EMAIL", "bmyers@fuzionstudio.net;lmcnair@fuzionstudio.net");
 
 ?>
